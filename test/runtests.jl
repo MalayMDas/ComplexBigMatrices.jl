@@ -1,6 +1,14 @@
 using ComplexBigMatrices
+using LinearAlgebra
 using Test
 
 @testset "ComplexBigMatrices.jl" begin
-    # Write your tests here.
+    # Create Float64 and BigFloat Matrices
+    setprecision(512)
+    a = [[1 1.0im];[1.0im 1]];
+    biga = Complex{BigFloat}.(a)
+
+    @test sum(Float64.(abs.(eigen(a) - eigen(biga)))) = 0.0
+    @test sum(Float64.(abs.(exp(a) - exp(biga)))) = 0.0
+    @test sum(Float64.(abs.(log(a) - log(biga)))) = 0.0
 end

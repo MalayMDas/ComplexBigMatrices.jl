@@ -3,6 +3,10 @@ uuid = "3f1b4eae-c8d4-40fb-a061-a38fdedae056"
 authors = ["Malay Das <malaydasat@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+GenericLinearAlgebra = "14197337-ba66-59df-a3e3-ca00e7dcff7a"
+GenericSchur = "c145ed77-6b09-5dd9-b285-bf645a82121e"
+
 [compat]
 julia = "1"
 
