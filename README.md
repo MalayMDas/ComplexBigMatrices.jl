@@ -1,6 +1,6 @@
 # ComplexBigMatrices
 
-This module calculates exp(), log() of complex BigFloat Matrices.
+This module calculates exp(), log() of complex BigFloat Matrices by diagonalizing them.  
 
 # Sample usage
 ```
