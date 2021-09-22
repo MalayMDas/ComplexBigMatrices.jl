@@ -34,9 +34,10 @@ end
 """
     eigen(a::Matrix{Complex{BigFloat}})
 Extends exp() to work with Matrix{Complex{BigFloat}}
-"""
+
 function eigen(a::Matrix{Complex{BigFloat}})
     eigen(a)
 end
+"""
 
 end
