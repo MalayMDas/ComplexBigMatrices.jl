@@ -1,7 +1,7 @@
 name = "ComplexBigMatrices"
 uuid = "3f1b4eae-c8d4-40fb-a061-a38fdedae056"
 authors = ["Malay Das <malaydasat@gmail.com> and contributors"]
-version = "0.2.0"
+version = "0.2.1"
 
 [deps]
 GenericLinearAlgebra = "14197337-ba66-59df-a3e3-ca00e7dcff7a"
