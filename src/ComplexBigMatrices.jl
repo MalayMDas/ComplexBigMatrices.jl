@@ -4,7 +4,7 @@ module ComplexBigMatrices
 This module calculates exp(), log() and eigen() of a complex BigFloat Matrix.
 """
 
-export exp, log
+export exp, log, eigen
 import .Base: exp, log
 
 using LinearAlgebra
@@ -30,5 +30,13 @@ function log(a::Matrix{Complex{BigFloat}})
     eig.vectors*Diagonal(log.(eig.values))*eig.vectors^(-1)
 end
 
+
+"""
+    eigen(a::Matrix{Complex{BigFloat}})
+Extends eigen() to work with Matrix{Complex{BigFloat}}
+"""
+function eigen(a::Matrix{Complex{BigFloat}})
+    LinearAlgebra.eigen(a)
+end
 
 end
